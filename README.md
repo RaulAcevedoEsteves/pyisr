@@ -49,7 +49,10 @@ if not os.path.exists(output_directory):
     os.makedirs(output_directory)
 
 # Convert HDF5 to TIFF
-main(input_directory, output_directory)
+from hdf2tiff import hdf2tiff
+input_directory = "/nsls2/data/staff/xyang4/data_cs/ca3ir4sn13/setup_6oct23/"
+output_directory = "/nsls2/data/staff/xyang4/data_cs/ca3ir4sn13/setup_6oct23_tiff_0910_tmp/"
+hdf2tiff(input_directory, output_directory)
 ```
 
 ---
